@@ -1,0 +1,13 @@
+.second-screen {
+    height: 700px;
+
+    &__title {
+        @include title;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        &::after {
+            top: 88px;
+            width: 94px;
+        }
+    }
+}

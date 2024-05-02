@@ -110,19 +110,12 @@
     width: 372px;
     z-index: 1;
     &__title {
-        position: relative;
+        @include title;
         margin-bottom: 5px;
-        font-size: 72px;
-        font-weight: 600;
         line-height: 68px;
         &::after {
-            content: '';
-            position: absolute;
             top: 67px;
-            left: 0;
             width: 65px;
-            height: 1px;
-            background-color: $black;
         }
     }
     &__text {

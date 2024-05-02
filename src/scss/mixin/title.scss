@@ -1,0 +1,12 @@
+@mixin title {
+    position: relative;
+        font-size: 72px;
+        font-weight: 600;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 1px;
+            background-color: $black;
+        }
+}
