@@ -1,0 +1,104 @@
+.first-screen {
+    position: relative;
+    height: 800px;
+    background-color: $lighterGray;
+    &__board {
+        position: absolute;
+        height: 220px;
+        box-shadow: $boxShadow;
+        border-radius: 100px;
+
+        &--white {
+            width: 608px;
+            background-color: $gray;
+            top: 288px;
+            left: 10px;
+            transform: rotate(-36deg);
+        }
+
+        &--blue {
+            width: 565px;
+            background-color: $blue;
+            top: 242px;
+            left: -54px;
+            transform: rotate(-64deg);
+        }
+
+        &--orange {
+            width: 618px;
+            background-color: $orange;
+            top: 247px;
+            left: -31px;
+            transform: rotate(-51deg);
+        }
+    }
+
+    &__image {
+        position: absolute;
+        left: 0;
+        top: 91px;
+        width: 883px;
+        height: 709px;
+    }
+}
+
+.menu {
+    width: 100%;
+    margin-bottom: 150px;
+    padding: 16px 20px 0;
+    display: flex;
+    align-items: center;
+
+    &__link {
+        margin-right: 64px;
+        color: $black;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:last-child {
+            margin-right: 0;
+        }   
+        
+        &--left {
+            margin-right: auto;
+        }
+    }
+}
+
+.menu-logo {
+    margin-right: 64px;
+    display: block;
+    text-decoration: none;
+
+    &__image {
+        width: 134px;
+        height: 69px;
+    }
+}
+
+.summary {
+    margin-left: 692px;
+    width: 372px;
+    &__title {
+        position: relative;
+        margin-bottom: 5px;
+        font-size: 72px;
+        font-weight: 600;
+        line-height: 68px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 67px;
+            left: 0;
+            width: 65px;
+            height: 1px;
+            background-color: $black;
+        }
+    }
+    &__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+}
+
