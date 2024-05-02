@@ -2,6 +2,7 @@
     position: relative;
     height: 800px;
     background-color: $lighterGray;
+    overflow: hidden;
     &__board {
         position: absolute;
         height: 220px;
@@ -39,6 +40,32 @@
         top: 91px;
         width: 883px;
         height: 709px;
+    }
+
+    &__inner-ring {
+        @include ring;
+        top: 214px;
+        right: 34px;
+        width: 194px;
+        height: 194px;
+        
+        &::after {
+            width: 129px;
+            height: 129px;
+        }
+    }
+
+    &__outer-ring {
+        @include ring;
+        top: 635px;
+        right: -113px;
+        width: 282px;
+        height: 282px;
+    
+        &::after {
+            width: 188px;
+            height: 188px;
+        }
     }
 }
 
@@ -78,8 +105,10 @@
 }
 
 .summary {
+    position: relative;
     margin-left: 692px;
     width: 372px;
+    z-index: 1;
     &__title {
         position: relative;
         margin-bottom: 5px;

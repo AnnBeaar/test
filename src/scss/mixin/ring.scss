@@ -1,0 +1,14 @@
+@mixin ring {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(144deg, $orange 10%, $darkBlue 54.17%, $darkGray 90%);
+    opacity: 0.6;
+    &::after {
+        content: '';
+        background-color: $lighterGray;
+        border-radius: 50%;
+    }
+}

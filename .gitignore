@@ -1,2 +1,2 @@
-dist/assets/css/base
-dist/assets/css/module
+dist/assets/css/* 
+!dist/assets/css/style.css
