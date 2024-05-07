@@ -1,0 +1,49 @@
+.third-screen {
+    height: 640px;
+    background-color: $lighterGray;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 46px;
+        align-items: center;
+    }
+    &__left-column {
+        width: 542px;
+        height: 319px;
+        margin-left: 12px;
+        padding-left: 155px;
+        padding-top: 127px;
+    }
+
+    &__left-title {
+        @include title;
+        line-height: 65px;
+        &::after {
+            top: 65px;
+            width: 70px;
+        }
+    }
+    &__right-column {
+        width: 479px;
+        height: 548px;
+        margin-right: 19px;
+    }
+    &__right-title {
+        @include title;
+        line-height: 65px;
+        margin-bottom: 20px;
+        &::after {
+            top: 65px;
+            width: 70px;
+        }
+    }
+    &__text {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    &__inner-right {
+        
+    }
+}
+
+
