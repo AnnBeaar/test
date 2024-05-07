@@ -43,7 +43,7 @@
     }
 
     &__inner-ring {
-        @include ring;
+        @include ring($lighterGray);
         top: 214px;
         right: 34px;
         width: 194px;
@@ -56,7 +56,7 @@
     }
 
     &__outer-ring {
-        @include ring;
+        @include ring($lighterGray);
         top: 635px;
         right: -113px;
         width: 282px;

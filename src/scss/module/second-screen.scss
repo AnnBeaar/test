@@ -1,13 +1,106 @@
 .second-screen {
     height: 700px;
 
+    &__inner {
+        position: relative;
+        padding-top: 32px;
+        z-index: 1;
+    }
     &__title {
         @include title;
-        margin-top: 32px;
         margin-bottom: 40px;
         &::after {
             top: 88px;
             width: 94px;
         }
+    }
+
+    &__left-ring {
+        @include ring($white);
+        width: 194px;
+        height: 194px;
+        top: 364px;
+        left: -74px;
+        &::after {
+            width: 129px;
+            height: 129px;
+        }
+    }
+
+    &__right-ring {
+        @include ring($white);
+        width: 194px;
+        height: 194px;
+        top: 67px;
+        right: -52px;
+        &::after {
+            width: 129px;
+            height: 129px;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.card {
+    width: 360px;
+    height: 360px;
+    padding: 42px 50px;
+    font-size: 36px;
+    font-weight: 600;
+    writing-mode: tb;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: $boxShadow;
+    background-repeat: no-repeat;
+    background-size: 197px 335px;
+    background-position: bottom left;
+    &--electro {
+        background-color: $gray;
+        background-image: url($imgPath + 'electro.png');
+    }
+    &--acoustic {
+        background-color: $orange;
+        background-image: url($imgPath + 'acoustic.png');
+    }
+    &--ukulele {
+        background-color: $blue;
+        background-image: url($imgPath + 'uculele.png');
+    }
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.advantage {
+    height: 98px;
+    padding-left: 100px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center left;
+    font-size: 18px;
+    &__number {
+        margin-bottom: -2px;
+        display: block;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    &--years {
+        background-image: url($imgPath + 'years.svg');
+    }
+    &--reviews {
+        background-image: url($imgPath + 'reviews.svg');
+    }
+    &--students {
+        background-image: url($imgPath + 'students.svg');
+    }
+    &--hours {
+        background-image: url($imgPath + 'hours.svg');
     }
 }
