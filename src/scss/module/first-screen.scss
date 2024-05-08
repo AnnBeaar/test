@@ -46,26 +46,12 @@
         @include ring($lighterGray);
         top: 214px;
         right: 34px;
-        width: 194px;
-        height: 194px;
-        
-        &::after {
-            width: 129px;
-            height: 129px;
-        }
     }
 
     &__outer-ring {
-        @include ring($lighterGray);
+        @include bigRing($lighterGray);
         top: 635px;
         right: -113px;
-        width: 282px;
-        height: 282px;
-    
-        &::after {
-            width: 188px;
-            height: 188px;
-        }
     }
 }
 

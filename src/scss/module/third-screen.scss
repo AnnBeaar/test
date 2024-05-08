@@ -1,11 +1,15 @@
 .third-screen {
+    position: relative;
     height: 640px;
     background-color: $lighterGray;
+    overflow: hidden;
     &__inner {
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding-top: 46px;
         align-items: center;
+        z-index: 1;
     }
     &__left-column {
         width: 542px;
@@ -41,8 +45,24 @@
         margin-bottom: 30px;
         font-size: 18px;
     }
-    &__inner-right {
-        
+    &__inner-ring {
+        @include bigRing($lighterGray);
+        top: 160px;
+        left: 109px;
+    }
+    &__outer-ring {
+        @include bigRing($lighterGray);
+        top: -88px;
+        right: -93px;
+    }
+    &__circle {
+        position: absolute;
+        top: 249px;
+        left: 12px;
+        width: 230px;
+        height: 230px;
+        background: url($imgPath + 'circle.svg') no-repeat 0 0; 
+        background-size: 100% 100%;
     }
 }
 

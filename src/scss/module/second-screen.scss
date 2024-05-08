@@ -17,26 +17,14 @@
 
     &__left-ring {
         @include ring($white);
-        width: 194px;
-        height: 194px;
         top: 364px;
         left: -74px;
-        &::after {
-            width: 129px;
-            height: 129px;
-        }
     }
 
     &__right-ring {
         @include ring($white);
-        width: 194px;
-        height: 194px;
         top: 67px;
         right: -52px;
-        &::after {
-            width: 129px;
-            height: 129px;
-        }
     }
 }
 
