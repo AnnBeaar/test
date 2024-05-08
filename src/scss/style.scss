@@ -1,11 +1,17 @@
 @import 'base/variables.scss';
-@import 'mixin/ring.scss';
+@import 'base/media.scss';
+@import 'mixin/media.scss';
+
+@import 'mixin/ring.scss'; 
 @import 'mixin/title.scss';
+
+
 @import 'base/fonts.scss';
 @import 'base/base.scss';
+
 @import 'module/first-screen.scss';
 @import 'module/socials.scss';
 @import 'module/buttons.scss';
 @import 'module/second-screen.scss';
 @import 'module/third-screen.scss';
-@import 'module/footer.scss'
+@import 'module/footer.scss';
