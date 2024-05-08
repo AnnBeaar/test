@@ -1,0 +1,22 @@
+.footer {
+    position: relative;
+    height: 238px;
+    &__inner {
+        padding-top: 5px;
+        padding-left: 583px;
+    }
+    &__title {
+        @include title;
+        margin-bottom: 20px;
+        line-height: 65px;
+        &::after {
+            top: 65px;
+            width: 70px;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: -46px;
+        left: 0;
+    }
+}
