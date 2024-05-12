@@ -1,13 +1,13 @@
 @mixin ring($holeColor) {
     position: absolute;
-    width: 194px;
-    height: 194px;
+    width: 230px;
+    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background: linear-gradient(144deg, red 10%, green 54.17%, blue 90%);
-    opacity: 0.6;
+    opacity: 0.8;
     
     &::after {
         content: '';
